@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+*{
+	font-family: 'Chartrand_Cyrillic Medium', sans-serif;
+	box-siding: border-box;
+}
+body{
+   background-image: url(../img/img/1.jpg);
+    background-image: center top;
+}
+h1{
+    font:  bold 30px;
+    letter-spacing: 3px;          
+           
+}
+
+#header, #nav, #wrepper, #content, #footer{
+    background-color: #ffffff;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: blue;
+}
+#header{
+    margin-top: 150px;
+}
+img{
+    width: 400px;
+}

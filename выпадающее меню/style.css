@@ -1,0 +1,80 @@
+
+
+a{
+	text-decoration: none; /* подчеркивание*/
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;    /* выделение пунктов*/
+}
+/* menu */
+.side {
+	width: 200px;
+	margin: 15px;
+}
+.menu a {
+	background: #3d3d3d;
+	color:#fff;
+	padding: 10px;
+	display: block;
+	border-bottom: 1px solid #666;
+	transition: 0.5s all;  /*плавность*/
+	
+}
+
+.menu a:hover{
+	background: #666;
+	padding: 10px 0 10px 20px;
+}
+/*всплывающее меню*/
+.menu3 {
+	position:relative;	/*???*/
+}
+.menu2{   /*пункты*/
+	position: absolute;
+	width:100%;
+	left:100%;
+	top: -9999em;
+	opacity:0; /*прозрачность*/
+	transition: 0.5s opacity;
+	border-left: 10px solid transparent;
+}
+
+.menu3:hover .menu2{
+	opacity:1;
+	top:0;
+}
+
+.menu li:first-child a,
+.menu li .menu2 li:first-child a{    /*первый элемент*/
+	border-radius: 4px 4px 0 0;
+}
+.menu li:last-child a,
+.menu li .menu2 li:last-child a{    /*последний элемент*/
+	border-radius: 0 0 4px 4px;
+	border-bottom: 0;
+}
+.menu li .menu2 li a{
+	border-radius: 0;
+	border-bottom: 1px solid #666;
+}
+/*иконки для всплывающих меню*/
+.menu3::after{			/*псевдо ????*/
+	content: " ";
+	position: absolute;
+	border: 5px solid;
+	border-color: transparent transparent transparent #eee; /* верх право низ лево*/
+	top: 1em;
+	right:0.7em;
+}
+
+
+
+
+
+
+
+
+
+
